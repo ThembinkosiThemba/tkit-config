@@ -1,0 +1,44 @@
+tools:
+  claude:
+    name: claude
+    description: Installer for claude code
+    install_commands:
+    - npm i -g @anthropic-ai/claude-code
+    remove_commands:
+    - npm uninstall -g @anthropic-ai/claude-code
+    update_commands:
+    - npm i -g @anthropic-ai/claude-code
+    run_commands:
+    - claude
+    installed: true
+  git:
+    name: git
+    description: Version control system
+    install_commands:
+    - sudo apt-get update
+    - sudo apt-get install -y git
+    remove_commands:
+    - sudo apt-get remove -y git
+    update_commands:
+    - sudo apt-get update
+    - sudo apt-get upgrade -y git
+    run_commands:
+    - git --version
+    installed: false
+  gemini:
+    name: gemini
+    description: Gemini Code CLI tool
+    install_commands:
+    - npm install -g @google/gemini-cli
+    remove_commands:
+    - npm uninstall -g @google/gemini-cli
+    update_commands:
+    - npm install -g @google/gemini-cli
+    run_commands:
+    - gemini
+    installed: true
+sync:
+  repo: ThembinkosiThemba/tkit-config
+  token: null
+  last_sync: null
+  auto_sync: false
